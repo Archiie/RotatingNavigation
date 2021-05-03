@@ -16,6 +16,7 @@ body{
 .container {
   background-color: #fafafa;
   transform-origin: top left; /* this ensures that rotation happens from top-left corner and not in the middle of the page */
+  transition: transform 0.6s linear; /* adds a smooth transition of the page */
 }
 
 .container.show-nav {
