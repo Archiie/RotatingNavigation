@@ -15,6 +15,7 @@ body{
 
 .container {
   background-color: #fafafa;
+  transform-origin: top left; /* this ensures that rotation happens from top-left corner and not in the middle of the page */
 }
 
 .container.show-nav {
