@@ -17,8 +17,37 @@ body{
   background-color: #fafafa;
   transform-origin: top left; /* this ensures that rotation happens from top-left corner and not in the middle of the page */
   transition: transform 0.6s linear; /* adds a smooth transition of the page */
+  width: 100vw;
+  min-height: 100vh;
+  padding: 50px; /* adds padding between browser border text */
 }
 
 .container.show-nav {
   transform: rotate(-20deg);
+}
+
+.circle-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+
+.circle {
+  background-color: #ff7979;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+
+.circle button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  background: transparent;
+  border: 0; /* to get rid of the black border */
+  font-size: 26px;
+  color: #fff;
 }
