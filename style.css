@@ -84,6 +84,22 @@ nav ul li {
   color: #fff;
   margin: 40px 0;
   transform: translateX(-100%); /* need to set aside the navs so that it slides in when the page moves out */
+  transition: transform 0.4s ease-in; /* for smooth transition I'm applying this to "transform" property */
+}
+
+nav ul li i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+nav ul li + li {
+  margin-left: 10px;
+  transform: translateX(-150%);
+}
+
+nav ul li + li + li {
+  margin-left: 20px;
+  transform: translateX(-200%);
 }
 
 .content img {
