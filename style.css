@@ -42,6 +42,7 @@ body{
 }
 
 .circle button {
+  cursor: pointer;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -68,4 +69,9 @@ body{
 
 .content img {
   max-width: 100%; /* sets the image to 100% of its content */
+}
+
+.content {
+  max-width: 1000px; /* this ensures that the maximum width of the content stays 1000px */
+  margin: 50px auto; /* this ensures that the content stays in the middle - left and right are auto aligned */
 }
