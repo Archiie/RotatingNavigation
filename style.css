@@ -55,3 +55,13 @@ body{
 .circle button:focus {
   outline: none; /* to get rid of the border when on focus */
 }
+
+.circle button#open {
+  left: 60%;
+}
+
+.circle button#close {
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
