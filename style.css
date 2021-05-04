@@ -51,3 +51,7 @@ body{
   font-size: 26px;
   color: #fff;
 }
+
+.circle button:focus {
+  outline: none; /* to get rid of the border when on focus */
+}
