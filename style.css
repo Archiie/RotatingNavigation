@@ -67,6 +67,25 @@ body{
   transform-origin: top left;
 }
 
+nav {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style-type: none; /* gets rid of bullet points */
+  padding-left: 30px;
+}
+
+nav ul li {
+  text-transform: uppercase;
+  color: #fff;
+  margin: 40px 0;
+  transform: translateX(-100%); /* need to set aside the navs so that it slides in when the page moves out */
+}
+
 .content img {
   max-width: 100%; /* sets the image to 100% of its content */
 }
@@ -74,4 +93,18 @@ body{
 .content {
   max-width: 1000px; /* this ensures that the maximum width of the content stays 1000px */
   margin: 50px auto; /* this ensures that the content stays in the middle - left and right are auto aligned */
+}
+
+.content h1 {
+  margin: 0;
+}
+
+.content small {
+  color: #555;
+  font-style: italic;
+}
+
+.content p {
+  color: #333;
+  line-height: 1.5;
 }
